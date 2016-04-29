@@ -1,0 +1,11 @@
+entity                  0.8266
+image                  -1.1664
+googleScholar          -2.7413
+adRatio                -1.7444
+mime                    6.2504
+rank8P3                -0.0017
+wikipedia              -1.0145
+tld                    -1.5367
+maxSimilarityScore      1.8977
+maxIntersection        -0.1737
+Intercept               2.7585
