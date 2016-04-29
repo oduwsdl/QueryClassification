@@ -1,0 +1,6 @@
+*.log
+*.pyc
+*.log~
+*.md~
+*.py~
+config~
