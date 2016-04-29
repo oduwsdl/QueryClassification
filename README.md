@@ -5,6 +5,7 @@ Classifies a web query as belonging to either the scholar or non-scholar class. 
 
 ## Installation
 * requirements.txt (coming soon)
+
 ## Usage
 ```
 $ python classifyQuery.py query 
