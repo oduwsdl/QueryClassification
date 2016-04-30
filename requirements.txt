@@ -1,1 +1,2 @@
-Coming soon
+requests == 2.4.1
+beautifulsoup4 == 4.4.1
