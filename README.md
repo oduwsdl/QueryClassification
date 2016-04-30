@@ -21,4 +21,4 @@ $ python classifyQuery.py "fluid dynamics"
 
 anwala@cs.odu.edu
 
-[Tech Report]: <http://www.cs.odu.edu/~anwala/>
+[Tech Report]: <http://www.cs.odu.edu/~anwala/files/publications/NwalaQueryClassification.pdf>
