@@ -1,5 +1,5 @@
 # QueryClassification
-(Implementation associated with: A Supervised Learning Algorithm for Binary Domain Classification of Web Queries using SERPs, Alexander C. Nwala and Michael L. Nelson)
+(Implementation associated with: [A Supervised Learning Algorithm for Binary Domain Classification of Web Queries using SERPs, Alexander C. Nwala and Michael L. Nelson])
 
 Here is the source code to classify a web query as belonging to either the scholar or non-scholar class. See tech report for full explanation: [Tech Report]
 
@@ -39,6 +39,7 @@ $ python classifyQuery.py "fluid dynamics"
 
 anwala@cs.odu.edu
 
-[Tech Report]: <http://www.cs.odu.edu/~anwala/files/publications/NwalaQueryClassification.pdf>
+[Tech Report]: <https://arxiv.org/abs/1605.00184>
+[A Supervised Learning Algorithm for Binary Domain Classification of Web Queries using SERPs, Alexander C. Nwala and Michael L. Nelson]: <https://arxiv.org/abs/1605.00184>
 [Python 2.7+]: <https://www.python.org/downloads/>
 [Requests]: <http://docs.python-requests.org/en/master/user/install/#install>
