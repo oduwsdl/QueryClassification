@@ -3,6 +3,7 @@
 *.log~
 *.md~
 *.py~
+*.html
 config~
 .DS_Store
 ._.DS_Store

@@ -81,7 +81,7 @@ def getGoogleScholarFlag(googleHTMLSoup):
 
 	return False
 
-def retrieveAdTldDict(googleHTMLSoup):
+def retrieveAdTldDict_obsolete(googleHTMLSoup):
 
 	if( len(googleHTMLSoup) == 0 ):
 		return {}
@@ -118,6 +118,7 @@ def retrieveAdTldDict(googleHTMLSoup):
 
 					parsedLink = urlparse(link)
 					try:
+						print('ad here'*5)
 						#non add has link and class
 						allLinksDict[i]['class'] = linkHeaders[i]['class'][0]
 						
@@ -147,18 +148,20 @@ def retrieveAdTldDict(googleHTMLSoup):
 
 	return allLinksDict
 
-def getAdRatio(googleAdsAndTlds):
+def getAdRatio(googleHTMLSoup, linksCount):
 
-	if( len(googleAdsAndTlds) == 0 ):
+	if( len(googleHTMLSoup) == 0 ):
 		return 0
 
-	adCount = 0
-	for key, dictValue in googleAdsAndTlds.items():
-		
-		if( dictValue['class'] == 'AD' ):
-			adCount += 1
+	liOrDiv = googleHTMLSoup.findAll('li', {'class': 'ads-ad'})
+	if( len(liOrDiv) == 0 ):
+		liOrDiv = googleHTMLSoup.findAll('div', {'class': 'ads-ad'})
 	
-	return adCount/float(len(googleAdsAndTlds))
+	adCount = len(liOrDiv)
+	if( linksCount == 0 ):
+		linksCount = 1
+
+	return adCount/float(adCount+linksCount)
 
 def retrieveLinksFromGooglePage(googleHTMLSoup):
 
